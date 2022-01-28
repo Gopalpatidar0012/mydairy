@@ -30,7 +30,10 @@ const Addcustomer=()=>{
         //console.log(nameid,customerid);
         //axios.post("https://dairymilkapi.herokuapp.com/addCustomer",nameid)
          .then((res)=>{
-          console.log(res);
+           console.log(res);
+          if(res){
+            alert("successful added")
+          }
          }).catch((error)=>{
               console.log(error)
          })
@@ -87,12 +90,12 @@ return(
     <h1>Add Customer</h1>
   <div className="form-group">
     <label>Customer Name</label>
-    <input type="text" value={nameid} name="name"  onChange={onchange}  className="form-control" id="exampleInputEmail1"  placeholder="Customer Name"/>
+    <input type="text" value={nameid} name="name"  onChange={onchange}  className="form-control"   placeholder="Customer Name"/>
    
   </div>
   <div className="form-group">
     <label>Customer Id</label>
-    <input type="text" value={customerid} name="customerid" onChange={onchangeid} className="form-control" id="exampleInputPassword1" placeholder="Customer Id"/>
+    <input type="text" value={customerid} name="customerid" onChange={onchangeid} className="form-control"  placeholder="Customer Id"/>
   </div>
  
   <button type="submit" className="btn btn-primary">Submit</button>

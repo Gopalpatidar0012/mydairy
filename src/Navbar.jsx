@@ -10,6 +10,7 @@ import Addcustomer from "./Addcustomer";
 
 //import Image from 'react-bootstrap/Image';
 const Navbar=()=>{
+ 
     return(
         <div>
         <BrowserRouter>
@@ -25,6 +26,8 @@ const Navbar=()=>{
       <li>
       <Link to="/milkhistry">MilkHistry</Link>
       </li>
+    
+
       
     </ul>
     
@@ -46,3 +49,9 @@ const Navbar=()=>{
 }
 
 export default Navbar;
+
+
+
+
+
+

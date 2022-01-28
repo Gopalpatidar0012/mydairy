@@ -33,11 +33,9 @@ const[Data,setFormData]=useState({
       axios(config).then((res)=>{
         console.log(res);
         if(res.data.User){
-         console.log(res.data.User);
+         alert("successful added!!!!")
         }
-        else{
-          console.log("okkkk");
-        }
+
        }).catch((error)=>{
                console.log(error);
        })
